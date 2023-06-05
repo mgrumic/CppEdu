@@ -8,7 +8,8 @@ public:
         auto valid = [this, val] { m_private++;/*val++*/; std::cout << "val=" << val << " m_private=" << m_private << std::endl;};
         valid();
 
-        // auto invalid = [val] { std::cout << "val=" << val << " m_private=" << m_private << std::endl;};
+        //auto invalid = [val] { std::cout << "val=" << val << " m_private=" << m_private << std::endl;};
+        // invalid();
     }
 
 private:

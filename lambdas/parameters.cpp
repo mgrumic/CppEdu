@@ -17,13 +17,17 @@ void templateCaller(T lambda) {
 
 int main()
 {
+    auto empty = [](){};
+    auto alsoEmpty = []{};
     auto noParameters = [] {std::cout << "empty" << std::endl;};
     noParameters();
 
     auto parameterLambda = [](const std::string& caller, int number){std::cout << caller << " number = " << number << std::endl;};
+    // void (*parameterLambda)(const std::string&,int) = [](const std::string& caller, int number){std::cout << caller << " number = " << number << std::endl;};
 
     functorCaller(parameterLambda);
     functionalCaller(parameterLambda);
     templateCaller(parameterLambda);
     return 0;
 }
+
