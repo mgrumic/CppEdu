@@ -43,3 +43,6 @@ CTestTestfile.cmake
 
 # CLion files
 .idea/
+
+# Project binaries
+bin/
