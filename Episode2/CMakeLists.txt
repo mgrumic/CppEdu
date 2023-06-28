@@ -6,7 +6,9 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Enable recursive search for source files
-file(GLOB_RECURSE CPP_SOURCES "Episode1/lambdas/*.cpp")
+file(GLOB_RECURSE CPP_SOURCES "ConstructorsAndMemory/*.cpp" "DelegatingConstructor/*.cpp" "ElisionAndOptimization/*.cpp" "MoveAssignmentOperator/*.cpp" "MoveConstructor/*.cpp" "RvalueLvalue/*.cpp" "RvalueReference/*.cpp")
+
+# add_compile_options(-fno-elide-constructors)
 
 # Iterate over the found source files and create a binary for each one
 foreach(CPP_FILE ${CPP_SOURCES})
