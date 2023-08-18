@@ -25,7 +25,7 @@ void run(std::function<int(int, int)> f)
 
 int main()
 {
-	Test test("KURCINA");
+	Test test("Test");
 	auto calculator = std::bind(&Test::add, test, placeholders::_2, placeholders::_1, 5);
 
 	cout << calculator(10, 11) << endl;

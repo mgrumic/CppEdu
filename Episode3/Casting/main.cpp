@@ -49,9 +49,9 @@ int main()
 	{
 		Parent parent;
 		Brother brother;
-
-		Parent* ppb = &brother;
-		Brother* pbb = dynamic_cast<Brother*>(ppb);
+		
+		Brother* ppb = &brother;
+		Parent* pbb = dynamic_cast<Parent*>(ppb);
 
 		if (pbb != nullptr)
 		{
@@ -84,5 +84,4 @@ int main()
 			cout << "Invalid pointer!" << endl;
 		}
 	}
-	
 }
